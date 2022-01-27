@@ -1,0 +1,179 @@
+.site-footer {
+    @extend .position-relative,
+    .overflow-hidden,
+    .text-white;
+    background: linear-gradient(81.12deg, #5E17EB 0%, #551DF7 45.31%, #8000FF 76.04%);
+
+    @include media-breakpoint-up(lg) {
+        padding: 7.875rem 0;
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding: 5rem 0;
+    }
+
+    &>.container-fluid {
+        @extend
+        /* .d-flex,
+        .justify-content-between,
+        .align-items-center, */
+        .position-relative;
+        z-index: 2;
+
+        /* @include media-breakpoint-up(lg) {
+            margin-top: 4.625%;
+            margin-bottom: 4.625%;
+        } */
+
+        @include media-breakpoint-down(sm) {
+            padding: 0 24px;
+        }
+    }
+
+    .circles-shape {
+        @extend .position-absolute,
+        .d-none,
+        .d-lg-block;
+        left: 47%;
+        top: -7rem;
+        pointer-events: none;
+        z-index: 1;
+        max-width: 800px;
+    }
+
+    .sf-content {
+        @include media-breakpoint-up(lg) {
+            max-width: 550px;
+            width: 55%;
+        }
+
+        @include media-breakpoint-down(lg) {
+            max-width: 480px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            @extend .font-weight-500,
+            .my-3;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 3.25rem;
+            }
+
+            @include media-breakpoint-between(sm, lg) {
+                font-size: 48px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: 40px;
+            }
+        }
+
+        &>p {
+            color: #CDBAFB;
+            margin-bottom: 2rem;
+            max-width: 470px;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 1.125rem;
+            }
+
+            @include media-breakpoint-between(sm, lg) {
+                font-size: 20px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: 18px;
+            }
+        }
+
+        .sf-img {
+            @include media-breakpoint-up(lg) {
+                position: absolute;
+                left: 55%;
+                width: 45%;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align: center;
+                z-index: 2;
+
+                img {
+                    margin-top: 1.375rem;
+
+                    @include media-breakpoint-up(xl) {
+                        max-width: 500px;
+                    }
+                }
+            }
+
+            /* @include media-breakpoint-up(lg) {
+                margin-left: 2%;
+            } */
+
+            @include media-breakpoint-up(xxl) {
+                margin-left: 5%;
+            }
+
+            /* @media screen and (min-width: 1600px) {
+                margin-left: 14%;
+            } */
+
+            @include media-breakpoint-between(sm, lg) {
+
+                /* margin-top: -3rem; */
+                img {
+                    max-width: 320px;
+                    max-height: 410px;
+                }
+            }
+
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            @include media-breakpoint-down(sm) {
+                img {
+                    max-width: 230px;
+                    max-height: 290px;
+                }
+            }
+        }
+    }
+
+    .sf-copyrights {
+        @extend .d-flex,
+        .align-items-center,
+        .align-items-lg-start,
+        .justify-content-between,
+        .flex-lg-column;
+
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            bottom: 0;
+            margin-bottom: -8.625%;
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 470px;
+        }
+
+        p {
+            font-size: 13px;
+            margin-bottom: 0;
+
+            @include media-breakpoint-up(lg) {
+                margin-top: 0.5rem;
+            }
+
+            @media screen and (max-width:380px) {
+                font-size: 11px;
+            }
+        }
+    }
+}

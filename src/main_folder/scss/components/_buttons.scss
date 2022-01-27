@@ -1,0 +1,64 @@
+.btn {
+    max-width: 177px;
+    width: 100%;
+    height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+
+    &.btn-primary {
+        background: linear-gradient(
+            81.12deg,
+            #5e17eb 0%,
+            #551df7 52.79%,
+            #7417eb 100%
+        );
+        box-shadow: 0px 1px 1px rgba(94, 23, 235, 0.2);
+        border-radius: 8px;
+        &:focus,
+        &:hover {
+            background: linear-gradient(
+                81.12deg,
+                #7417eb 0%,
+                #551df7 52.79%,
+                #5e17eb 100%
+            );
+            color: #fff;
+        }
+    }
+
+    &.btn-light {
+        background: linear-gradient(180deg, #ffffff 0%, #e4dcec 100%),
+            linear-gradient(81.12deg, #5e17eb 0%, #551df7 52.79%, #7417eb 100%);
+        box-shadow: 0px 1px 1px rgba(47, 10, 124, 0.7);
+        border-radius: 8px;
+        color: #5f18eb;
+    }
+}
+.swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    margin: 8px auto !important;
+}
+.swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(
+        81.12deg,
+        #5e17eb 0%,
+        #551df7 52.79%,
+        #7417eb 100%
+    );
+    box-shadow: 0px 1px 1px rgba(94, 23, 235, 0.2);
+}
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+    right: 40px;
+}

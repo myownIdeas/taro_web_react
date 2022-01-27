@@ -1,0 +1,215 @@
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  color: $text-primary;
+  background-color: #fff;
+  min-height: 100vh;
+
+  @include Poppin(400);
+}
+
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
+  outline: 0 !important;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.p-30 {
+  padding: 30px;
+}
+/* width */
+
+.container-fluid {
+  padding: 0 30px;
+}
+
+.select-field .css-1s2u09g-control,
+.select-field .css-319lph-ValueContainer {
+  height: 44px;
+  border-color: $white-300;
+  background-color: $white-300;
+  @include border-radius(5px);
+}
+.select-field {
+  height: 44px;
+  .css-1pahdxg-control {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid $white-300;
+  }
+  .css-1okebmr-indicatorSeparator {
+    display: none;
+  }
+  .css-1s2u09g-control {
+    &:hover {
+      border: 1px solid $white-300;
+    }
+  }
+}
+
+.css-1hb7zxy-IndicatorsContainer {
+  background-color: $white-300;
+  border-radius: 5px;
+}
+
+.shadow-5 {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.07),
+    0 10px 10px -5px rgba(0, 0, 0, 0.05) !important;
+}
+
+.relative {
+  position: relative;
+}
+
+.simplebar-scrollbar:before {
+  opacity: 0.7;
+  background-color: $secondary-blue;
+}
+
+.main-content {
+  padding-bottom: 30px;
+}
+
+.wrapper {
+  overflow: hidden;
+}

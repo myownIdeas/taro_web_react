@@ -1,0 +1,21 @@
+$system-font-stack: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+Helvetica,
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol";
+
+@import "main_folder/scss/fonts/fonts";
+@import "main_folder/scss/supporting/bootstrap/bootstrap";
+@import "main_folder/scss/supporting/swiper-bundle.min.css";
+@import "main_folder/scss/supporting/global";
+@import "main_folder/scss/supporting/site-header";
+@import "main_folder/scss/supporting/hero-sections";
+@import "main_folder/scss/supporting/section-compliant";
+@import "main_folder/scss/supporting/section-slider";
+@import "main_folder/scss/supporting/site-footer";
+@import "main_folder/scss/components/_footer.scss";

@@ -1,0 +1,82 @@
+.cardBox {
+  padding: 40px 60px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(109, 48, 157, 0.1);
+  border-radius: 30px;
+  height: 100%;
+  .icon {
+    margin-bottom: 16px;
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #221836;
+    margin-bottom: 12px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #736392;
+    margin: 0;
+  }
+  &.cardBox {
+    p {
+      max-width: 206px;
+    }
+  }
+}
+
+.cardAnywhere {
+  background: linear-gradient(
+    81.12deg,
+    #5e17eb 0%,
+    #551df7 45.31%,
+    #8000ff 76.04%
+  );
+  border-radius: 30px;
+  padding: 50px 60px;
+  margin-top: 60px;
+  color: #fff;
+  position: relative;
+  h2 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #cdbafb;
+  }
+  .subscription-form {
+    .cardOverlay {
+      position: relative;
+      z-index: 9;
+    }
+    .btn {
+      background: linear-gradient(180deg, #ffffff 0%, #e4dcec 100%),
+        linear-gradient(81.12deg, #5e17eb 0%, #551df7 52.79%, #7417eb 100%);
+      box-shadow: 0px 1px 1px rgba(47, 10, 124, 0.7);
+      border-radius: 8px;
+      color: #5f18eb;
+    }
+    p {
+      &.note {
+        color: #cdbafb;
+      }
+    }
+  }
+  .shape {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
